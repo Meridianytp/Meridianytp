@@ -1,0 +1,61 @@
+body{
+	background-color:silver;
+}
+hr{
+	border: 1px solid black;
+}
+.fullBodyWrap{
+	background-color:silver;
+	font-family:Helvetica;
+}
+tr:nth-child(even) {
+  background-color: #44004466;
+}
+.diagram table, th, td{
+	border: 2px solid black;
+	border-collapse: collapse;
+	
+}
+.rainbowtext a{
+	background-position: 100% 0;
+	background-image: linear-gradient(to left, violet, cyan, yellow, violet);
+	-webkit-background-clip: text;
+	color: transparent;
+	animation: move 120s linear infinite;
+}
+.diagram a
+{
+	color:blue;
+}
+img{
+	height:200px;
+	width:200px;
+	object-fit:cover;
+}
+#cropImg{
+	height:200px;
+	width:200px;
+	object-fit:cover;
+	object-position:100% 0;
+}
+.gif{
+	height:200px;
+	width:200px;
+	object-fit:cover;
+}
+#cropGif{
+	height:200px;
+	width:200px;
+	object-fit:cover;
+	object-position:48% 0;
+}
+.rainbow
+{
+	background-image: linear-gradient(to left, violet, cyan, yellow, violet);
+	background-size:600% 100%;
+	animation: move 120s linear infinite;
+}
+@keyframes move{
+	to{
+		background-position: 1000vh;
+	}

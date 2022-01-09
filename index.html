@@ -4,9 +4,34 @@
 	<!-- This is a comment -->
 		<title>Meridian</title>
 		<meta charset="UTF-8">
+		<style>
+		.ass a
+		{
+			background-color:crimson;
+			border:1px solid;
+		}
+		#test td
+		{
+			background-color: blue;
+		}
+		table, th, td, 
+		{
+			border: 2px solid black;
+			border-collapse: collapse;
+		}
+			@keyframes move{
+		to{
+			background-position: 1000vh;
+		}
+		</style>
 	</head>
 	<body style="background-color:pink;font-family:Helvetica;">
-		<a href="about.html" target="_self">About page</a>
+		<a href="about.html" target="_self" style="border:2px solid black;background-position: 100% 0;
+		background-image: linear-gradient(to left, violet, cyan, yellow, violet);
+		background-size:200% 100%;
+		-webkit-background-clip: text;
+		color: transparent;
+		animation: move 120s linear infinite;">About page</a>
 		<a href="https://www.youtube.com/channel/UCjOPpnXDDSebu6UVabLRFng" target="_blank">YouTube Channel</a>
 			<br>
 			<hr>
@@ -14,11 +39,45 @@
 		<p lang="ja">こんいちは</p>
 		
 		<h3>HTML Assigments:</h3>
-		<ul>
+		<ul class="ass">
 			<li>
-				<a href="Assignment1.html" style="background-color:crimson;border:1px solid">Assignment 1
+				<a href="Assignments/Assignment1.html">Assignment 1
+				</a>
+			</li>
+			<li>
+				<a href="Assignments/Assignment2.html">Assignment 2
 				</a>
 			</li>
 		</ul>
+		
+		<br>
+		<br>
+		<!--<div>
+		<p>Table with thead, tfoot, and tbody</p>
+		<div id="test">
+			<table bgcolor=#FFFF00>
+				<colgroup>
+					<col>
+					<col span="2", class="Mattias">
+					<col span="2", class="Jonathan">
+				</colgroup>
+				<caption>Super Gays</caption>
+				<tr>
+					<td style="background-color:#FF0;"></td>
+					<th scope="col">Mattias</th>
+					<th scope="col">Jonathan</th>
+					<th scope="col">Andu</th>
+					<th scope="col">Sebbe</th>
+				</tr>
+				<tr>
+					<th scope="row">Skill:</th>
+					<td>Suck dick</td>
+					<td>Talk shit</td>
+					<td>Not making VNMaker</td>
+					<td>Being offline</td>
+				</tr>
+			</table>
+		</div>
+		</div>-->
 	</body>
 </html>
